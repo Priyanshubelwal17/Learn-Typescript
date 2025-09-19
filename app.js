@@ -1,11 +1,11 @@
-function printName(id) {
-    if (typeof id === "string") {
-        console.log(id.toUpperCase());
+class DataStorage {
+    data = [];
+    addItem(item) {
+        this.data.push(item);
     }
-    else {
-        console.log(id);
+    getItems() {
+        return this.data;
     }
 }
-printName(32);
 export {};
 //# sourceMappingURL=app.js.map

@@ -1,8 +1,10 @@
-function printName(id:number | string) {
-    if(typeof id ==="string"){
-        console.log(id.toUpperCase());
-    }else{
-        console.log(id);
+class DataStorage<T>{
+    private data: T[]=[];
+
+    addItem(item:T){
+        this.data.push(item)
     }
-} 
-printName(32)
+
+    getItems():T[]{
+        return this.data
+    }}
