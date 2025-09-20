@@ -1,10 +1,2 @@
-class DataStorage<T>{
-    private data: T[]=[];
-
-    addItem(item:T){
-        this.data.push(item)
-    }
-
-    getItems():T[]{
-        return this.data
-    }}
+import isEven from "is-even"
+console.log(isEven(4));

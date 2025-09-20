@@ -1,11 +1,3 @@
-class DataStorage {
-    data = [];
-    addItem(item) {
-        this.data.push(item);
-    }
-    getItems() {
-        return this.data;
-    }
-}
-export {};
+import isEven from "is-even";
+console.log(isEven(4));
 //# sourceMappingURL=app.js.map
